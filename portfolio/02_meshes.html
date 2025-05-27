@@ -1,0 +1,117 @@
+<!-- https://youtu.be/_xkSvufmjEs?si=mh-MXT2ZdUasYAYn&t=3416 -->
+<!-- adobe.ly/2GAgF93 -->
+<!-- https://scrimba.com/build-and-deploy-your-portfolio-c012 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../img/face.jpg">
+
+    <!-- Help auto scale for desktop & mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STUDENT Donggu Han Website</title>
+
+    <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="../external/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- alt text can be blank since the logo is purely decorative and putting something like logo isn't actually helpful -->
+            <img src="../img/cout.jpg" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#about" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#resume" class="nav__link">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <!-- TODO put the name of the assignment here -->
+        <h1 class="section__title section__title--intro">
+            Project <strong>Procedural Geometric Modeling</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">3D Graphics</p>
+        <img src="../img/portfolio_thumbnails/02_meshes.jpg" alt="a picture of this portfolio item" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <h2>Project Overview</h2>
+        <p>The Procedural Geometric Modeling project was an assignment for my CS250 Computer Graphics course at DigiPen.
+            The objective was to develop procedural mesh generation algorithms and integrate them into an interactive graphics demo.</p>
+
+        <h2>Tasks Completed</h2>
+        <ul>
+            <li>Designed and implemented a graphics class.</li>
+            <li>Developed functions that creates a surface with stack and slices and draws lines from each point.</li>
+            <li>Developed functions to render three-dimensional shapes such as spheres and cones.</li>
+        </ul>
+
+        <h2>Reflection</h2>
+        <p>When creating functions to render the cylinder and cone, I faced difficulties because the lines were not drawn correctly on the flat surface.
+            Since I believed the logic of the function was incorrect, I rewrote the function with a new logic, and the problem was resolved.
+            Also, there was an issue about emsdk that is complier for web. I had a misconfigured path for emsdk, but I resolved the issue by correcting the path.</p>
+    </div>
+
+    <div class="portfolio-item-individual">
+        <h2>Demo</h2>
+        <iframe id="demo" src="../webgl/D02ProceduralMeshes/graphics_fun.html?start=meshes" tabindex="-1"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:donggu.han@digipen.edu" class="footer__link">donggu.han@digipen.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com/in/dongguhan/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/dongguHan">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <!-- Want to list more? search : https://fontawesome.com/v5/search?ic=brands -->
+        </ul>
+    </footer>
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>
